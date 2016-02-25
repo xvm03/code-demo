@@ -16,6 +16,9 @@ import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
 /**
+ *
+ * 对应nodejs的aes加解密
+ *
  * xumingming 16/2/24.
  */
 public class OpenSSLDecryptor {
@@ -127,7 +130,7 @@ public class OpenSSLDecryptor {
      * nodejs 加密，secret是用来生成key 和iv 调用的是openSSL的EVP_BytesToKey
      *
      * EVP_BytesToKey填充的/0，java没有，于是牛人出现了，自己实现了一个
-     *
+    *g
      * exports.encrypt = function (str) {
      * var cipher = crypto.createCipher('aes192', secret);
      * var enc = cipher.update(str, 'utf8', 'hex');

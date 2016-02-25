@@ -1,6 +1,8 @@
 package com.ming;
 
 /**
+ *
+ * java的常量池之integer缓存
  * xumingming 16/2/25.
  */
 public class IntegerEquals {
